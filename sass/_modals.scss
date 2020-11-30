@@ -1,0 +1,732 @@
+// ------------------------modals-------------------------------
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 3;
+    display: none;
+    animation: modal-open .5s;
+
+    .modal-content {
+        width: 35%;
+        height: 80vh;
+        overflow-y: scroll;
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+
+        .modal-header {
+            width: 100%;
+            height: 70px;
+            padding: 1rem;
+            background-color: rgb(190, 190, 190);
+            position: relative;
+            text-transform: uppercase;
+            font-weight: bold;
+
+
+            .modal-close {
+                left: 90%;
+                width: 10%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                font-size: 1.5rem;
+                border: none;
+                transition: 0.5s;
+                
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: $accent-color;
+                }
+            }
+        }
+        .modal-body {
+            width: 100%;
+            height:auto;
+            position: relative;
+
+            .modal-image {
+                width: 100%;
+                height: 40vh;
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .new-listing {
+                    position: absolute;
+                    
+                    padding: 1rem;
+                    background-color: $accent-color;
+                    text-transform: uppercase;
+                }
+            }
+            .modal-info {
+                width: 95%;
+                height: 50vh;
+                margin: 0 auto;
+
+                p {
+                    width: 100%;
+                    font-size: 0.9rem;
+                    padding: 1.5rem;
+                }
+
+                hr {
+                    margin: 1rem;
+                }
+
+                .modal-details {
+                    width: 100%;
+                    height: 10vh;
+                    display: flex;
+                    flex-direction: row;
+
+                    .add-price {
+                        width: 60%;
+                        height: 100%;
+                        padding: 0.5rem;
+
+                        h1,h2 {
+                            padding: 0.5rem;
+                            font-size: 1.5rem;
+                        }
+
+                        h2 {
+                            position: relative;
+                            top: -10px;
+                        }  
+                        
+                    }
+
+                    .baths-and-beds {
+                        width: 60%;
+
+                    h3 {
+                        position: relative;
+                        width: 100%;
+                        top: 10px;
+                        font-size: 1rem;
+                    }
+                }
+                }
+                
+
+
+                .property-details {
+                    width: 100%;
+                    height: 20vh;
+                    margin: 0 auto;
+
+                    h2 {
+                        padding: 1rem;
+                    }
+                    
+                    ul {
+                        padding: 1.8rem;
+                        position: relative;
+                        top: -30px;
+                    }
+                }
+            }
+
+            .form-container {
+                position: relative;
+                display: block;
+                width: 90%;
+                padding: 1.5rem;
+                margin: 0 auto;
+               
+                margin-bottom: 10px;
+  
+
+                h2 {
+                    text-align: left;
+                    margin: 0 0 20px;
+                }
+
+                .form {
+                    padding: 30px 40px;
+                    background-color: yellow;
+                }
+
+                .form-control {
+                    padding-bottom: 20px;
+                    margin-bottom: 5px;
+                    position: relative;
+
+                    & label {
+                        display: block;
+                        
+                    }
+                    & input {
+                        border: 2px solid #f0f0f0;
+                        border-radius: 4px;
+                        display: block;
+                        width: 100%;
+                        padding: 10px;
+                        font-size: 14px;
+
+                        &:focus {
+                            outline: 0;
+                            border-color: rgb(143, 143, 143);
+                        }
+                    }
+
+                
+                }
+
+                #textarea {
+                    border: 2px solid #f0f0f0;
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                    border-radius: 4px;
+
+                    &:focus {
+                        outline: 0;
+                        border-color: rgb(143, 143, 143);
+                    }
+                }
+
+                .submit {
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    outline: 0;
+                    border: 0;
+                    background-color:$accent-color;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+        .modal-footer {
+            width: 100%;
+            height: 5vh;
+            position: relative;
+            bottom: 0;
+            text-align: center;
+
+            .disclaimer {
+                color: $primary-color;
+            }
+        }
+
+    }
+
+    @keyframes modal-open {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+@media (min-width:320px) and (max-width:767.98px) {
+     // ---------------------------------------------------------modals 
+
+     .modal {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 15;
+
+
+        
+        .modal-content {
+            width: 95%;
+            height: 95%;
+            position: absolute;
+            z-index: 100;
+            
+            
+            
+
+            .modal-header {
+                width: 100%;
+                height: 8vh;
+
+                .modal-close {
+                left: 80%;
+                width: 20%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+
+                
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: $accent-color;
+                }
+            }
+        }
+
+            .modal-body {
+                width: 100%;
+                height: auto;
+                position: relative;
+
+
+                .modal-image {
+                    width: 100%;
+                    height: 40vh;
+                    position: relative;
+                }
+
+                .modal-info {
+                    width: 100%;
+                    height: 60vh;
+                    position: relative;
+
+
+                    .modal-details {
+                        width: 100%;
+                        height: 15vh;
+
+                        .add-price {
+                            width: 40%;
+                            height: 100%;
+                            h1 {
+                                font-size: 0.7rem;
+                                position: relative;
+                                top: 20px;
+                            }
+
+                            h2 {
+                                font-size: 1.5rem;
+                                position: relative;
+                                top: 10px;
+                            }
+                        }
+
+                        .baths-and-beds {
+                            height: 100%;
+                            width: 60%;
+                            position: relative;
+
+                            h3 {
+                                width: 100%;
+                                font-size: 0.7rem;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                                padding: 0.5rem;
+                            }
+                        }
+                    }
+
+                    .property-details {
+                        position: relative;
+                        height: 30vh;
+                        
+                    }
+    
+                   
+                }
+
+                .form-container {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    
+                }
+
+                .disclaimer {
+                    width: 100%;
+                    height: 10vh;
+                
+                }
+
+                
+            }
+            
+        }
+
+       
+        
+    }
+
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .modal {
+        width: 100%;
+        height: 100%;
+        z-index: 20;
+        position: fixed;
+    
+        h1,h2 {
+            font-size: 1.8rem;
+        }
+    
+        .modal-content {
+            width: 90%;
+            height: 85%;
+            position: relative;
+            top: 55%;
+    
+            .modal-header {
+                font-size: 2rem;
+            }
+    
+            .modal-body {
+                
+                .modal-info {
+    
+                    .modal-details {
+    
+                        .add-price {
+                            
+    
+                            h2 {
+                                font-size: 2.5rem;
+                            } 
+                        }
+    
+                        .baths-and-beds {
+                            width: 80%;
+                            h3 {
+                                
+                                font-size: 1.5rem;
+                            }
+                        }
+                        
+    
+                    }
+    
+                    p {
+                        font-size: 1.3rem;
+                        padding: 1.5rem;
+                    }
+    
+                    .property-details {
+    
+                        ul li {
+                            font-size: 1.3rem;
+                        }
+                    }
+    
+    
+                    .form-container {
+                        position: relative;
+                        display: block;
+                        width: 100%;
+                        padding: 1.5rem;
+                        margin: 0 auto;
+                       
+                        margin-bottom: 10px;
+          
+        
+                        h2 {
+                            text-align: left;
+                            margin: 0 0 20px;
+                        }
+        
+                        .form {
+                            padding: 30px 40px;
+                           
+                        }
+        
+                        .form-control {
+                            
+        
+                           
+                            & input {                 
+                                font-size: 18px;
+    
+                            }
+        
+                            small {
+                                display: none;
+                            }
+                        }
+        
+                        #textarea {
+                            font-size: 18px;
+                           
+    
+                        }
+        
+                        .submit {
+                            width: 100%;
+                            padding: 20px;
+                            font-size: 18px;
+                            
+                        }
+                    }
+                    
+                
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media (min-width:1024px) and (max-width:1440px) {
+    .modal {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.7);
+        z-index: 3;
+        display: none;
+        animation: modal-open .5s;
+    
+        .modal-content {
+            width: 45%;
+            height: 90vh;
+            overflow-y: scroll;
+            background: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+    
+    
+            .modal-header {
+                width: 100%;
+                height: 70px;
+                padding: 1rem;
+                background-color: rgb(190, 190, 190);
+                position: relative;
+    
+    
+                .modal-close {
+                    left: 90%;
+                    width: 10%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    font-size: 1.5rem;
+                    border: none;
+                    transition: 0.5s;
+                    
+    
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $accent-color;
+                    }
+                }
+            }
+            .modal-body {
+                width: 100%;
+                height:auto;
+                position: relative;
+    
+                .modal-image {
+                    width: 100%;
+                    height: 40vh;
+                    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+    
+                    .new-listing {
+                        position: absolute;
+                        
+                        padding: 1rem;
+                        background-color: $accent-color;
+                        text-transform: uppercase;
+                    }
+                }
+                .modal-info {
+                    width: 95%;
+                    height: 50vh;
+                    margin: 0 auto;
+    
+                    p {
+                        width: 100%;
+                        font-size: 0.9rem;
+                        padding: 1.5rem;
+                    }
+    
+                    hr {
+                        margin: 1rem;
+                    }
+    
+                    .modal-details {
+                        width: 100%;
+                        height: 15vh;
+                        display: flex;
+                        flex-direction: row;
+    
+                        .add-price {
+                            width: 50%;
+                            height: 100%;
+                            padding: 0.5rem;
+                           
+    
+                            h1,h2 {
+                                padding: 0.5rem;
+                                font-size: 1.5rem;
+                            }
+    
+                            h2 {
+                                position: relative;
+                                top: -10px;
+                            }  
+                            
+                        }
+    
+                        .baths-and-beds {
+                            width: 50%;
+    
+                        h3 {
+                            position: relative;
+                            width: 100%;
+                            top: 20px;
+                            font-size: 1rem;
+                            padding: 1rem;
+                        }
+                    }
+                    }
+                    
+    
+    
+                    .property-details {
+                        width: 100%;
+                        height: 30vh;
+                        margin: 0 auto;
+    
+                        h2 {
+                            padding: 1rem;
+                        }
+                        
+                        ul {
+                            padding: 1.8rem;
+                            position: relative;
+                            top: -20px;
+                        }
+                    }
+                }
+    
+                .form-container {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    padding: 1rem;
+                    margin: 0 auto;
+                   
+                    margin-bottom: 10px;
+      
+    
+                    h2 {
+                        text-align: left;
+
+                        padding: 0;
+                    }
+    
+                    .form {
+                        padding: 30px 40px;
+                        background-color: yellow;
+
+                        
+                        
+
+                        .form-control {
+                            padding-bottom: 20px;
+                            margin-bottom: 5px;
+                            position: relative;
+        
+                            & label {
+                                display: block;
+                                
+                            }
+                            & input {
+                                border: 2px solid #f0f0f0;
+                                border-radius: 4px;
+                                display: block;
+                                width: 100%;
+                                padding: 10px;
+                                font-size: 14px;
+        
+                                &:focus {
+                                    outline: 0;
+                                    border-color: rgb(143, 143, 143);
+                                }
+                            }
+        
+                        
+                        }
+                    }
+    
+                    
+    
+                    #textarea {
+                        border: 2px solid #f0f0f0;
+                        width: 100%;
+                        padding: 10px;
+                        font-size: 14px;
+                        margin-bottom: 20px;
+                        border-radius: 4px;
+    
+                        &:focus {
+                            outline: 0;
+                            border-color: rgb(143, 143, 143);
+                        }
+                    }
+    
+                    .submit {
+                        width: 100%;
+                        padding: 10px;
+                        font-size: 14px;
+                        border-radius: 4px;
+                        outline: 0;
+                        border: 0;
+                        background-color:$accent-color;
+                        cursor: pointer;
+                    }
+                }
+                
+            }
+            .modal-footer {
+                width: 100%;
+                height: 5vh;
+                position: relative;
+                bottom: 0;
+                text-align: center;
+    
+                .disclaimer {
+                    color: $primary-color;
+                }
+            }
+    
+        }
+    
+        
+    }
+    
+
+}

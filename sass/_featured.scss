@@ -1,0 +1,1113 @@
+
+
+.main-container {
+
+    
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    
+
+  
+
+    
+}
+
+.featured-prop-info {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+
+    .left-section {
+        width: 30%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+
+        .feat-prop-details {
+            width: 80%;
+            height: 30%;
+            background-color: #1c1d1f;
+            margin-bottom: 20px;
+            color: $secondary-color;
+            text-transform: uppercase;
+            position: absolute;
+            left: 20px;
+            top: 10%;
+            
+            
+
+                h3 {
+                    padding: 0.8rem;
+                    position: relative;
+                    left: 15px;
+                    font-size: 1.2rem;
+                }
+
+                hr {
+                    width: 85%;
+                    border-color: grey;
+                    margin: 0 auto;
+                }
+        }
+
+        .agent-details {
+            position: absolute;
+            width: 80%;
+            top: 45%;
+            left: 5%;
+            
+            .request-info {
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                
+                i {
+                    font-size: 2rem;
+                    padding-right: 0.5rem;
+                }
+
+                h4 {
+                    text-transform: uppercase;
+                    position: relative;
+                    top: 5px;
+                }
+            }
+
+            .agent-image {
+                width: 50%;
+                height: 30vh;
+                padding: 1rem;
+                position: relative;
+                top: 0;
+                left: -15px;
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+    
+        }
+
+        
+        .agent-contact {
+            width: 70%;
+            height: 10vh;
+            position: relative;
+            left:0;
+
+            h4,h5 {
+                padding: 0.5rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .right-section {
+        width: 70%;
+        height: auto;
+       display: flex;
+       flex-direction: column;
+       position: relative;
+       margin-bottom: 10px;
+       
+       
+      
+
+        .feat-prop-summary {
+            width: 90%;
+            height: 100%;
+            text-align: left;
+
+            h1 {
+                position: relative;
+                left: 25px;
+                font-size: 2.5rem;
+            }
+
+            h3 {
+                width: 90%;
+                padding: 1.5rem;
+                font-size: 2rem;
+            }
+            p {
+                width: 90%;
+                padding: 1.2rem;
+                font-family: $body-text;
+                font-size: 1.3rem;
+                position: relative;
+                top: -20px;
+            }
+
+            .btn {
+                width: 40%;
+                position: relative;
+                left: 50%;
+                top: 20px;
+                padding: 1rem;
+                
+            }
+        }
+    }
+
+    
+
+}
+
+
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.897);
+    z-index: 3;
+    display: none;
+    animation: modal-open .5s;
+
+    .form-container-2 {
+        position: relative;
+        display: block;
+        width: 40%;
+        padding: 1.5rem;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+
+        h2 {
+            text-align: center;
+            margin: 0 0 20px;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .form-2 {
+            padding: 30px 40px;
+            
+        }
+
+        .form-control-2 {
+            padding-bottom: 20px;
+            margin-bottom: 5px;
+            position: relative;
+
+            & label {
+                display: block;
+                
+            }
+            & input {
+                border: 2px solid #f0f0f0;
+                border-radius: 4px;
+                display: block;
+                width: 80%;
+                padding: 0.5rem;
+                font-size: 14px;
+                margin: 0 auto;
+
+                &:focus {
+                    outline: 0;
+                    border-color: rgb(143, 143, 143);
+                }
+            }
+
+            &.success input {
+                border-color: #2ecc71 ;
+            }
+            &.error input {
+                border-color: #e74c3c;
+            }
+            & small {
+                color: #e74c3c;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                visibility: hidden;
+            }
+
+            &.error small {
+                visibility: visible;
+            }
+        }
+
+        #textarea {
+            width: 80%;
+            position: relative;
+            left: 10%;
+            border-radius: 4px;
+            margin-bottom: 40px;
+            font-size: 14px;
+            padding: 1rem;
+            
+
+            &:focus {
+                outline: 0;
+                border-color: rgb(143, 143, 143);
+            }
+        }
+
+        .submit {
+            width: 80%;
+            padding: 1.5rem;
+            font-size: 14px;
+            border-radius: 4px;
+            outline: 0;
+            border: 0;
+            background-color:$accent-color;
+            cursor: pointer;
+            position: relative;
+            left: 10%;
+        }
+    }
+}
+
+.feat-prop-gallery-grid {
+    width: 95%;
+    height: 70vh;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 5px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .gallery-grid-img-1 {
+        grid-column: 1/5;
+        grid-row: 1/6;
+        height: 99%;
+        position: relative;
+        top: -2px;
+
+    }
+    .gallery-grid-img-2 {
+        grid-column: 5/7;
+        grid-row: 1/3;
+        height: 100%;
+
+    }
+    .gallery-grid-img-3 {
+        grid-column: 5/7;
+        grid-row: 3/5;
+        height: 100%;
+
+    }
+}
+
+.hero-2 {
+    height: 70vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248, 246, 246);
+    overflow: hidden;
+    
+
+    .hero-bg-img-2 {
+        width: 100%;
+        height: 100%;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+    .inner-container {
+        width: 50%;
+        height: 50%;
+        border: 3px solid $accent-color;
+        color: $secondary-color;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        h1 {
+            position: relative;
+            font-size: 2.5rem;
+            bottom: 30px;
+        }
+
+        p {
+            width: 70%;
+            position: relative;
+            left: 10px;
+            top: -10px;
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            width: 30%;
+            height: 20%;
+            padding: 0;
+            position: absolute;
+            top: 85%;
+            
+
+            a {
+                padding: 0;
+                font-size: 1.5rem;
+            }
+        }
+
+    }
+
+
+    
+}
+
+}
+
+// -------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------mobile media queries----------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+
+
+
+@media (min-width:320px) and (max-width:767.98px) {
+ 
+    .main-container {
+        width: 100%;
+        overflow-x: hidden;
+        
+        .hero  {
+            height: 10vh;
+            
+
+            .gallery {
+                display: none;
+            }
+        }
+
+
+        
+           
+        .featured-prop-info {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        
+            .left-section {
+                width: 100%;
+                height: 40vh;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                background-color: purple;
+        
+        
+                .feat-prop-details {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #1c1d1f;
+                    margin-bottom: 20px;
+                    color: $secondary-color;
+                    text-transform: uppercase;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    
+                    
+        
+                        h3 {
+                            padding: 0.8rem;
+                            position: relative;
+                            left: 15px;
+                            font-size: 1rem;
+                        }
+        
+                        hr {
+                            width: 85%;
+                            border-color: grey;
+                            margin: 0 auto;
+                        }
+                }
+        
+                .agent-details {
+                    position: absolute;
+                    width: 100%;
+                    height: 60%;
+                    left: 0;
+                    background-color:blue;
+                    display: none;
+                    
+                    .request-info {
+                        width: 100%;
+                        height: 100%;
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: row;
+                        
+                        i {
+                            font-size: 2rem;
+                            padding-right: 0.5rem;
+                        }
+        
+                        h4 {
+                            text-transform: uppercase;
+                            position: relative;
+                            top: 5px;
+                        }
+                    }
+        
+                    .agent-image {
+                        width: 50%;
+                        height: 30vh;
+                        padding: 1rem;
+                        position: relative;
+                        top: 0;
+                        left: -15px;
+            
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+            
+                }
+        
+                
+                .agent-contact {
+                    width: 70%;
+                    height: 10vh;
+                    position: relative;
+                    left:0;
+        
+                    h4,h5 {
+                        padding: 0.5rem;
+                    }
+                }
+            }
+        
+            .right-section {
+                width: 100%;
+                height: auto;
+               display: flex;
+               flex-direction: column;
+               position: relative;
+               top: -10px;
+               
+               
+              
+        
+                .feat-prop-summary {
+                    width: 90%;
+                    height: 80%;
+                    text-align: left;
+        
+                    h1 {
+                        position: relative;
+                        left: 25px;
+                        font-size: 2rem;
+                        top: 30px;
+                    }
+        
+                    h3 {
+                        width: 100%;
+                        font-size: 0.8rem;
+                    }
+                    p {
+                        width: 100%;
+                        padding: 1rem;
+                        font-family: $body-text;
+                        font-size: 1rem;
+                        position: relative;
+                        top: -20px;
+                    }
+        
+                    .btn {
+                        width: 60%;
+                        position: relative;
+                        left: 50%;
+                        top: 20px;
+                        padding: 1rem;
+                        
+                    }
+                }
+            }
+        
+        }        
+
+
+        .modal {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.897);
+            z-index: 3;
+            display: none;
+            animation: modal-open .5s;
+        
+            .form-container-2 {
+                position: relative;
+                display: block;
+                width: 95%;
+                height: 95%;
+                padding: 1.5rem;
+                margin: 0 auto;
+                position: absolute;
+                top: 55%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+        
+        
+                h2 {
+                    text-align: center;
+                    margin: 0 0 20px;
+                    color: white;
+                    font-size: 1rem;
+                }
+        
+                .form-2 {
+                    //  padding: 30px 40px;
+                    
+                }
+        
+                .form-control-2 {
+                    padding-bottom: 20px;
+                    margin-bottom: 5px;
+                    position: relative;
+        
+                    
+                    & input {
+                        border: 2px solid #f0f0f0;
+                        border-radius: 4px;
+                        display: block;
+                        width: 100%;
+                        padding: 0.5rem;
+                        font-size: 14px;
+                        margin: 0 auto;
+        
+                        &:focus {
+                            outline: 0;
+                            border-color: rgb(143, 143, 143);
+                        }
+                    }
+        
+                }
+        
+                #textarea {
+                    width: 100%;
+                    position: relative;
+                    border-radius: 4px;
+                    margin-bottom: 20px;
+                    font-size: 12px;
+                    height: 20%;
+                    left: 0px;
+                    
+        
+                    &:focus {
+                        outline: 0;
+                        border-color: rgb(143, 143, 143);
+                    }
+                }
+        
+                .submit {
+                    width: 100%;
+                    padding: 1rem;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    outline: 0;
+                    border: 0;
+                    background-color:$accent-color;
+                    cursor: pointer;
+                    position: relative;
+                    left: 0%;
+                }
+            }
+        }
+
+
+
+// .fade {
+//     opacity: 1;
+// }
+
+.feat-prop-gallery-grid {
+    display: none;
+}
+
+.hero-2 {
+    height: 30vh;
+    position: relative;
+
+    .inner-container {
+        width: 80%;
+        height: 80%;
+
+        h1 {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+    }
+
+    
+    
+}
+
+
+// --------------------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------tablet media queries-----------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------------------
+
+@media (min-width:768px) and (max-width:1024px)  {
+
+    .main-container {
+        overflow-x: hidden;
+       
+
+       .hero {
+           position: relative;
+           .gallery {
+               display: none;
+           }
+
+           
+       }
+
+       .featured-prop-info {
+        display: flex;
+        flex-direction: column-reverse;
+           height: auto;
+           width: 100%;
+           margin-bottom: 10px;
+
+           .left-section {
+               width: 100%;
+               height: 20vh;
+               display: flex;
+               flex-direction: row;
+               position: relative;
+
+               .feat-prop-details {
+                   width: 45%;
+                   height: 100%;
+                   position: absolute;
+                   top: 0;
+                  
+
+                   h3 {
+                       font-size: 1rem;
+                   }
+
+                   hr {
+                       width: 100%;
+                   }
+               }
+
+               .agent-details {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                left: 25%;
+                top: 0;
+                flex-direction: row;
+                position: relative;
+
+                .request-info {
+                    padding: 0.5rem;
+                }
+
+                .agent-image {
+                    position: absolute;
+                    top: 0px;
+                    height: 100%;
+                    padding: 1rem;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .agent-contact {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0.5rem;
+                    text-align: center;
+
+                    h4, h5 {
+                        position: relative;
+                        top: 30px;
+                        font-size: 1rem;
+                        left: 20%;
+                    }
+
+                }
+               }
+               
+           }
+
+           .right-section {
+               width: 95%;
+               height: 40%;
+               margin-bottom: 10px;
+               border: 2px solid $accent-color;
+
+               .feat-prop-summary {
+                   width: 100%;
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   align-items: center;
+                   text-align: center;
+
+                   h1 {
+                       font-size: 2.5rem;
+                       position: relative;
+                       left: 0;
+                       top: 10px;
+                   }
+
+                   p {
+                       width: 95%;
+                       font-size: 1.5rem;
+                   }
+
+                   .btn {
+                       width: 50%;
+                       position: relative;
+                       top: 20px;
+                       left: 25%;
+                       font-size: 1.5rem;
+                   }
+               }
+           }
+       }
+
+       .feat-prop-gallery-grid {
+           width: 100%;
+           height: 30vh;
+           margin-bottom: 10px;
+       }
+
+       .hero-2 {
+           height: 40vh;
+           margin-bottom: 10px;
+       }
+
+
+
+       .modal {
+           width: 100%;
+           height: 100%;
+           position: fixed;
+           top: 0;
+           left: 0;
+           .form-container-2 {
+               width: 80%;
+               height: 95%;
+               position: absolute;
+               top: 55%;
+               left: 50%;
+               transform: translate(-50%,-50%);
+
+               .form-control-2 {
+                   input {
+                       padding: 1rem;
+                   }
+               }
+           }
+       }
+    }
+
+}
+
+
+
+// ---------------------------------------laptop------------------------------------------------------------------
+
+
+
+ @media (min-width:1024px) and (max-width:1440px) {
+
+
+    .main-container {
+        position: relative;
+
+        .hero {
+            height: 40vh;
+        }
+
+        .featured-prop-info {
+            width: 100%;
+            height: auto;
+            position: relative;
+            top: 0;
+
+            .left-section {
+                width: 30%;
+                height: 90vh;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+        
+        
+                .feat-prop-details {
+                    width: 80%;
+                    height: 35%;
+                    background-color: #1c1d1f;
+                    margin-bottom: 20px;
+                    color: $secondary-color;
+                    text-transform: uppercase;
+                    position: absolute;
+                    left: 20px;
+                    top: 1%;
+                    left: 5%;
+                    
+                    
+        
+                        h3 {
+                            padding: 0.8rem;
+                            position: relative;
+                            left: 15px;
+                            font-size: 0.8rem;
+                        }
+        
+                        hr {
+                            width: 85%;
+                            border-color: grey;
+                            margin: 0 auto;
+                        }
+                }
+        
+                .agent-details {
+                    position: absolute;
+                    width: 80%;
+                    top: 40%;
+                    left: 5%;
+                    
+                    .request-info {
+                        width: 100%;
+                        height: 100%;
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: row;
+                        
+                        i {
+                            font-size: 2rem;
+                            padding-right: 0.5rem;
+                        }
+        
+                        h4 {
+                            text-transform: uppercase;
+                            position: relative;
+                            top: 5px;
+                        }
+                    }
+        
+                    .agent-image {
+                        width: 70%;
+                        height: 30vh;
+                        padding: 1rem;
+                        position: relative;
+                        top: 0;
+                        
+            
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+            
+                }
+        
+                
+                .agent-contact {
+                    width: 80%;
+                    height: 10vh;
+                    position: relative;
+                    left:0;
+        
+                    h4,h5 {
+                        padding: 0.5rem;
+                    }
+                }
+            }
+
+            .right-section {
+                position: relative;
+                top: 0;
+                width: 70%;
+                height: auto;
+                margin-bottom: 20px;
+                
+                .feat-prop-summary {
+                    width: 90%;
+                    height: 80%;
+                    text-align: left;
+        
+                    h1 {
+                        position: relative;
+                        left: 25px;
+                        top: 20px;
+                        font-size: 2.5rem;
+                    }
+        
+                    h3 {
+                        width: 100%;
+                        padding: 1rem;
+                        font-size: 0.8rem;
+                        position: relative;
+                        left: 0;
+                    }
+                    p {
+                        width: 100%;
+                        padding: 0.8rem;
+                        font-family: $body-text;
+                        font-size: 1rem;
+                        position: relative;
+                        top: -20px;
+                    }
+        
+                    .btn {
+                        width: 40%;
+                        position: relative;
+                        left: 50%;
+                        top: 20px;
+                        padding: 1rem;
+                        
+                    }
+                }
+            }
+        }
+
+        .modal {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.897);
+            z-index: 10;
+            display: none;
+            animation: modal-open .5s;
+        
+            .form-container-2 {
+                display: block;
+                width: 40%;
+                height: 95%;
+                padding: 1.5rem;
+                margin: 0 auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+        
+        
+                h2 {
+                    text-align: center;
+                    margin: 0 0 20px;
+                    color: white;
+                    font-size: 1rem;
+                }
+        
+                .form-2 {
+                    padding: 30px 40px;
+                    
+                }
+        
+                .form-control-2 {
+                    padding-bottom: 20px;
+                    margin-bottom: 5px;
+                    position: relative;
+        
+                    & label {
+                        display: block;
+                        
+                    }
+                    & input {
+                        border: 2px solid #f0f0f0;
+                        border-radius: 4px;
+                        display: block;
+                        width: 100%;
+                        padding: 0.5rem;
+                        font-size: 14px;
+                        margin: 0 auto;
+                        margin-bottom: 0;
+        
+                        &:focus {
+                            outline: 0;
+                            border-color: rgb(143, 143, 143);
+                        }
+                    }
+        
+                }
+        
+                #textarea {
+                    width: 100%;
+                    height: 30%;
+                    left: 0;
+                    position: relative;
+                    border-radius: 4px;
+                    margin-bottom: 40px;
+                    font-size: 14px;
+                    padding: 0.5rem;
+                    
+        
+                    &:focus {
+                        outline: 0;
+                        border-color: rgb(143, 143, 143);
+                    }
+                }
+        
+                .submit {
+                    width: 100%;
+                    padding: 1rem;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    outline: 0;
+                    border: 0;
+                    background-color:$accent-color;
+                    cursor: pointer;
+                    position: relative;
+                    left: 0;
+                    top: -30px;
+                }
+            }
+        }
+    }
+ }

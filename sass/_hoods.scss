@@ -1,0 +1,594 @@
+
+// -------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------Desktop styling-------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+
+
+#downtown-img {
+    background: url(../imgs/downtown.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+#malibu-img {
+    background: url(../imgs/malibu.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#bevhills-img {
+    background: url(../imgs/beverlyhills.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+// -------------------------------------------hoods pages--------------------------------------------------
+
+
+.hero {
+    #hood-title {
+        
+        h1 {
+            font-size: 10rem;
+            font-family: $body-text;
+        }
+    }
+}
+
+
+
+
+.hood-information {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    
+
+
+
+   .left-section {
+       width: 40%;
+       height: 100%;
+       position: relative;
+       background-color: $primary-color;
+   }
+
+   .hood-image {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 30px;
+    left: 20%;
+    z-index: 0;
+
+    
+    
+
+
+ img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+}
+
+
+
+
+
+
+
+   .right-section {
+    width: 70%;
+    height: 100%;
+    z-index: 0;
+
+    .hood-summary {
+        text-align: left;
+        width: 70%;
+        height: 70%;
+        position: absolute;
+        left: 20%;
+        caret-color: $primary-color;
+        text-align: left;
+
+        h1 {
+            font-size: 2.5rem;
+            padding: 2rem;
+        }
+
+
+        p {
+            line-height: 1.5rem;
+            width: 95%;
+            position: relative;
+            margin: 0 auto;
+            padding: 1rem;
+            font-size: 1vw;
+        }
+    }
+
+   }
+
+}
+
+.left-section-2 {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    
+
+    .points-of-interest {
+        width: 60%;
+        height: 70%;
+        background-color: white;
+        z-index: 1;
+        position: absolute;
+        left: 10%;
+
+        .our-interest {
+            padding: 1.5rem;
+
+            p {
+                font-size: 1vw;
+                padding: 1rem;
+            }
+        }
+
+        ol {
+            padding: 1rem;
+            font-size: 1vw;
+            position: relative;
+            left: 30px;
+            top: -15px;
+            font-weight: bold;
+        }
+
+        li {
+            position: relative;
+            left: 10%;
+            font-size: 1rem;
+            padding: 0.2rem;
+            width: 80%;
+        }
+    }
+}
+
+.right-section-2 {
+    width: 40%;
+    height: 100%;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+
+    .hood-image-2 {
+        width: 120%;
+        height: 80%;
+       position: absolute;
+       top: 10%;
+       right: 10%;
+        z-index: 5;
+        margin: 10px;
+        
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+    }
+
+}
+
+
+
+// -------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------mobile media queries----------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+
+@media (max-width:767.98px) {
+    
+
+    .hood-information {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+
+    .left-section{
+        width: 100%;
+        height: 30vh;
+
+        display: flex;
+        flex-direction: column;
+
+        .hood-image {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 0px -180px;
+            }
+
+        }
+        
+        
+    }
+
+    
+
+    .right-section {
+        width: 100%;
+        height: 150vh;
+        position: relative;
+        background-color: black;
+
+        .hood-summary {
+            width: 90%;
+            height: 95%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            background-color: $secondary-color;
+
+            .fade {
+                opacity: 1;
+            }
+
+            h1 {
+                position: relative;
+                top: 10px;
+                width: 100%;
+    
+
+            }
+            
+            p {
+                position: relative;
+                top: -10px;
+                width: 100%;
+                font-size: 5vw;
+                line-height: 1.1rem;
+            }
+        }
+        }
+
+
+
+        .left-section-2 {
+            width: 100%;
+            height: 150vh;
+            position: relative;
+    
+            .points-of-interest {
+                width: 95%;
+                height: 95%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+
+                p {
+                    font-size: 5vw;
+                    padding: 0.5rem;
+                    text-align: center;
+                }
+
+                ol {
+                    position: relative;
+                    top: -20px;
+                    left: 0;
+                    font-size: 5vw;
+                }
+
+                ul li {
+                    width: 80%;
+                    position: relative;
+                    left: 5%;
+                    top: -10px;
+                    font-size: 4.5vw;
+                    margin: 0 auto;
+                    text-align: left;
+                }
+            }
+        }
+
+        .right-section-2 {
+            width: 100%;
+            height: 50vh;
+            background-color: yellow;
+            display: none;
+
+            
+
+            .hood-image-2 {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: purple;
+                margin: 0;
+                
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: fill;
+                }
+
+
+            }
+        }
+    }
+
+}
+
+
+// -------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------Tablet Media Queries-----------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------
+
+
+@media (min-width:768px) and (max-width:1024px) {
+
+    .main-container {
+        
+        .hero {
+            height: 60vh;
+            margin-bottom: 10px;
+        }
+
+        .hood-information {
+            position: relative;
+            display: flex;
+            height: auto;
+            flex-direction: column;
+            margin-bottom: 10px;
+
+            .left-section {
+                top: 0;
+                width: 100%;
+                height: 40vh;
+                margin-bottom: 10px;
+                
+                .hood-image {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+
+            .right-section {
+                width: 95%;
+                height: 70vh;
+                top: 0;
+                left: 0;
+                position: relative;
+                border: 2px solid $accent-color;
+                .hood-summary {
+                    width: 95%;
+                    height: 95%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    text-align: center;
+
+                    h1 {
+                        padding: 1.5rem;
+                    }
+
+                    p {
+                        width: 90%;
+                        font-size: 3vw;
+                        padding: 0.5rem;
+                    }
+                    
+                }
+            }
+
+            .left-section-2 {
+                top: 0;
+                width: 95%;
+                height: 80vh;
+                border: 2px solid $accent-color;
+                margin-bottom: 10px;
+                .points-of-interest {
+                    width: 95%;
+                    height: 95%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    text-align: center;
+                    
+
+                    .our-interest {
+                        width: 95%;
+                        margin: 0 auto;
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        p {
+                            font-size: 3vw;
+                        }
+                    }
+
+                    ol {
+                        font-size: 3vw;
+                        padding: 0.5rem;
+                        width: 90%;
+                    }
+
+                    ul li {
+                        width: 85%;
+                        font-size: 2.7vw;
+                        margin: 0;
+                        position: relative;
+                        top: 10px;
+                        text-align: left;
+                        
+                    }
+                }
+            }
+
+            .right-section-2 {
+                width: 100%;
+                height: 40vh;
+                position: relative;
+                .hood-image-2 {
+                 width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin: 0;
+                
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                }
+            }
+           
+        }
+
+       
+       
+    }
+
+    
+}
+
+
+
+@media (min-width:1024px) and (max-width:1440px) {
+    
+
+    .main-container {
+        width: 100%;
+        margin: 0 auto;
+
+        
+
+        
+        
+        .hood-information {
+            width: 97%;
+            margin-bottom: 10px;
+            
+    .hood-summary {
+        width: 90%;
+        height: auto;
+        position: relative;
+        top: -10px;
+        left: 5%;
+      
+        h1 {
+            position: relative;
+            top: 20px;
+            left: 50px;
+        }
+
+        p {
+            width: 80%;
+            font-size: 1rem;
+        }
+    }
+
+    .left-section-2 {
+        top: 0;
+        width: 95%;
+        height: 80vh;
+        margin-bottom: 10px;
+        .points-of-interest {
+            width: 80%;
+            height: 95%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: left;
+            
+
+            .our-interest {
+                width: 90%;
+                margin: 0 auto;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: left;
+
+
+                p {
+                    width: 100%;
+                    font-size: 1rem;
+                    position: relative;
+                    left: -30px;
+                    padding: 0.5rem;
+                }
+            }
+
+            ol {
+                font-size: 1rem;
+                padding: 0.5rem;
+                width: 90%;
+            }
+
+            ul li {
+                width: 80%;
+                font-size: 0.9rem;
+                margin: 0;
+                position: relative;
+                top: 10px;
+                text-align: left;
+                left: 5%;
+                
+            }
+        }
+    }
+
+}
+}
+}
