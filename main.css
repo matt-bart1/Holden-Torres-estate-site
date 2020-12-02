@@ -1,6 +1,11 @@
+#about-hero .inner-container h1 {
+  font-size: 6rem;
+  font-family: "Arapey", serif;
+}
+
 .about-us {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
 }
 
 .about-us .inner-container {
@@ -43,7 +48,7 @@
 }
 
 .about-us .inner-container .right-section .about-us-blurb h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 1.5rem;
   width: 100%;
   text-align: center;
@@ -51,11 +56,11 @@
 
 .about-us .inner-container .right-section .about-us-blurb p {
   width: 60%;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
   margin: 0 auto;
   font-size: 1.2rem;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1548,7 +1553,7 @@ p {
   margin-left: auto;
   position: relative;
   color: #fff;
-  background-color: #000;
+  background: #1c1d1f;
 }
 
 .featured .inner-container .left-section .feat-property-details {
@@ -1595,6 +1600,7 @@ p {
 
 .featured .inner-container .left-section .feat-property-details .read-more .btn a {
   padding: 0;
+  font-size: 1rem;
 }
 
 .featured .inner-container .right-section {
@@ -1660,7 +1666,6 @@ p {
 .property-summary .inner-container .left-section .property-image {
   width: 90%;
   height: 70%;
-  background-color: green;
   position: absolute;
   top: 50%;
   left: 60%;
@@ -1793,7 +1798,7 @@ p {
   top: 10px;
   padding: 1.5rem;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .neighbourhoods .inner-container .hood-card .hood-blurb p {
@@ -3752,6 +3757,7 @@ a {
   text-decoration: none;
   padding: 3rem;
   color: #1c1d1f;
+  font-weight: 600;
 }
 
 a:hover {
@@ -3809,7 +3815,7 @@ nav .logo {
 nav .logo img {
   position: relative;
   top: 10px;
-  width: 100%;
+  width: 90%;
   height: 100%;
 }
 
@@ -3919,6 +3925,7 @@ footer .inner-container .footer-card h2 {
   padding: 1rem;
   color: white;
   text-transform: uppercase;
+  font-size: 2.5rem;
 }
 
 footer .inner-container .form {
@@ -3932,7 +3939,7 @@ footer .inner-container .form {
 footer .inner-container .form input, footer .inner-container .form textarea, footer .inner-container .form .send {
   width: 90%;
   padding: 1rem;
-  font-size: 14px;
+  font-size: 18px;
   margin: 10px;
   border-radius: 4px;
   border: 2px solid grey;
@@ -3949,6 +3956,13 @@ footer .inner-container .form textarea {
   height: 15vh;
 }
 
+footer .inner-container .form .send:hover {
+  background: #F0E5BD;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 footer .inner-container .contact-and-social-media {
   width: 90%;
   height: 80%;
@@ -3962,11 +3976,16 @@ footer .inner-container .contact-and-social-media h3, footer .inner-container .c
   top: 20px;
 }
 
+footer .inner-container .contact-and-social-media h2 {
+  font-size: 2.5rem;
+}
+
 footer .inner-container .contact-and-social-media h3 {
   padding: 0.5rem;
   position: relative;
   top: 40px;
   font-family: "Arapey", serif;
+  font-size: 2rem;
 }
 
 footer .inner-container .contact-and-social-media .social-media-icons {
@@ -4490,7 +4509,7 @@ footer .inner-container .disclaimer {
   height: 50%;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 78%;
+  top: 75%;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4525,7 +4544,7 @@ footer .inner-container .disclaimer {
 }
 
 .main-container .properties .property-grid .property .property-summary .property-headline h1 {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
 }
 
 .main-container .properties .property-grid .property .property-summary .property-headline h3 {
@@ -4538,7 +4557,7 @@ footer .inner-container .disclaimer {
   width: 100%;
   height: 10vh;
   position: relative;
-  top: -35px;
+  top: -25px;
   left: -2px;
 }
 
@@ -4563,7 +4582,7 @@ footer .inner-container .disclaimer {
   position: relative;
   background-color: #1c1d1f;
   color: #fff;
-  top: -10px;
+  top: -20px;
 }
 
 .main-container .properties .property-grid .property .property-summary .property-hover .text {
@@ -4574,8 +4593,8 @@ footer .inner-container .disclaimer {
 
 .main-container .properties .property-grid .property .property-summary .property-hover .text p {
   width: 95%;
-  padding: 0.3rem;
-  font-size: 0.9rem;
+  padding: 0.8rem;
+  font-size: 1rem;
 }
 
 .main-container .properties .property-grid .property .property-summary .property-hover .read-more {

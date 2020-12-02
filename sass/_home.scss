@@ -300,7 +300,7 @@
                             margin-left: auto;
                             position: relative;
                             color: $secondary-color;
-                            background-color: #000;
+                           background: $primary-color;
                            
                         }
                     }
@@ -341,6 +341,7 @@
 
                                 a {
                                     padding: 0;
+                                    font-size: 1rem;
                                 }
                             }
                         }
@@ -408,7 +409,6 @@
                 .property-image {
                     width: 90%;
                     height: 70%;
-                    background-color: green;
                     position: absolute;
                     top: 50%;
                     left: 60%;
@@ -525,7 +525,7 @@
                         top: 10px;
                         padding: 1.5rem;
                         text-transform: uppercase;
-                        font-size: 2.5rem;
+                        font-size: 3rem;
                     }
 
                     p {

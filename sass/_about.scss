@@ -1,9 +1,19 @@
 // ------------------desktop styling----------------------------
 
 
+#about-hero {
+    .inner-container {
+        h1 {
+            font-size: 6rem;
+            font-family: $body-text;
+        }
+    }
+}
+
+
 .about-us {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
 
     .inner-container {
         width: 100%;
@@ -45,7 +55,7 @@
 
 
                 h1 {
-                    font-size: 2rem;
+                    font-size: 2.5rem;
                     padding: 1.5rem;
                     width: 100%;
                     text-align: center;
@@ -53,11 +63,11 @@
 
                 p {
                     width: 60%;
-                    line-height: 1.2rem;
+                    line-height: 1.5rem;
                     margin: 0 auto;
                     font-size: 1.2rem;
                     position: absolute;
-                    top: 50%;
+                    top: 55%;
                     left: 50%;
                     transform: translate(-50%,-50%);
                 }
